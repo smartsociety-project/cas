@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" typeof="bibo:Document " about="" property="dcterms:language" content="en">
+<head> 
+    <title>The SmartSociety CAS Namespace</title> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+    <!-- 
+      === NOTA BENE ===
+      For the three scripts below, if your spec resides on dev.w3 you can check them
+      out in the same tree and use relative links so that they'll work offline,
+     -->
+<!-- PM -->
+    <style type="text/css">
+      .note { font-size:small; margin-left:50px }
+     </style>
+
+     
+     
+    
+    
+    
+     
+     
+  <style>/*****************************************************************
+ * ReSpec 3 CSS
+ * Robin Berjon - http://berjon.com/
+ *****************************************************************/
+
+/* --- INLINES --- */
+em.rfc2119 { 
+    text-transform:     lowercase;
+    font-variant:       small-caps;
+    font-style:         normal;
+    color:              #900;
+}
+
+h1 acronym, h2 acronym, h3 acronym, h4 acronym, h5 acronym, h6 acronym, a acronym,
+h1 abbr, h2 abbr, h3 abbr, h4 abbr, h5 abbr, h6 abbr, a abbr {
+    border: none;
+}
+
+dfn {
+    font-weight:    bold;
+}
+
+a.internalDFN {
+    color:  inherit;
+    border-bottom:  1px solid #99c;
+    text-decoration:    none;
+}
+
+a.externalDFN {
+    color:  inherit;
+    border-bottom:  1px dotted #ccc;
+    text-decoration:    none;
+}
+
+a.bibref {
+    text-decoration:    none;
+}
+
+cite .bibref {
+    font-style: normal;
+}
+
+code {
+    color:  #C83500;
+}
+
+/* --- TOC --- */
+.toc a, .tof a {
+    text-decoration:    none;
+}
+
+a .secno, a .figno {
+    color:  #000;
+}
+
+ul.tof, ol.tof {
+    list-style: none outside none;
+}
+
+.caption {
+    margin-top: 0.5em;
+    font-style:   italic;
+}
+
+/* --- TABLE --- */
+table.simple {
+    border-spacing: 0;
+    border-collapse:    collapse;
+    border-bottom:  3px solid #005a9c;
+}
+
+.simple th {
+    background: #005a9c;
+    color:  #fff;
+    padding:    3px 5px;
+    text-align: left;
+}
+
+.simple th[scope="row"] {
+    background: inherit;
+    color:  inherit;
+    border-top: 1px solid #ddd;
+}
+
+.simple td {
+    padding:    3px 10px;
+    border-top: 1px solid #ddd;
+}
+
+.simple tr:nth-child(even) {
+    background: #f0f6ff;
+}
+
+/* --- DL --- */
+.section dd > p:first-child {
+    margin-top: 0;
+}
+
+.section dd > p:last-child {
+    margin-bottom: 0;
+}
+
+.section dd {
+    margin-bottom:  1em;
+}
+
+.section dl.attrs dd, .section dl.eldef dd {
+    margin-bottom:  0;
+}
+
+@media print {
+    .removeOnSave {
+        display: none;
+    }
+}
+</style><link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/w3c-unofficial"><!--[if lt IE 9]><script src='https://www.w3.org/2008/site/js/html5shiv.js'></script><![endif]--></head> 
+  <body class="h-entry" role="document" id="respecDocument"><div class="head" role="contentinfo" id="respecHeader">
+  <p>
+    
+  </p>
+  <h1 class="title p-name" id="title" property="dcterms:title">The SmartSociety CAS Namespace</h1>
+  
+  <h2 property="dcterms:issued" datatype="xsd:dateTime" content="2014-09-04T08:16:33.000Z" id="unofficial-draft-04-september-2014">Unofficial Draft <time class="dt-published" datetime="2014-09-04">04 September 2014</time></h2>
+  <dl>
+    
+    
+    
+    
+    
+    
+    
+    
+    <dt>Editors:</dt>
+    <dd class="p-author h-card vcard" rel="bibo:editor" inlist=""><span typeof="foaf:Person"><a class="u-url url p-name fn" rel="foaf:homepage" property="foaf:name" content="Heather Packer" href="http://www.ecs.soton.ac.uk/~hp3/">Heather Packer</a>, <a rel="foaf:workplaceHomepage" class="p-org org h-org h-card" href="http://www.ecs.soton.ac.uk/">University of Southampton</a></span>
+</dd>
+<dd class="p-author h-card vcard" rel="bibo:editor" inlist=""><span typeof="foaf:Person"><a class="u-url url p-name fn" rel="foaf:homepage" property="foaf:name" content="Luc Moreau" href="http://www.ecs.soton.ac.uk/~lavm/">Luc Moreau</a>, <a rel="foaf:workplaceHomepage" class="p-org org h-org h-card" href="http://www.ecs.soton.ac.uk/">University of Southampton</a></span>
+</dd>
+
+    
+    
+  </dl>
+  
+  
+  
+  
+    
+      
+        <p class="copyright">
+          This document is licensed under a
+          <a class="subfoot" href="http://creativecommons.org/licenses/by/3.0/" rel="license">Creative Commons
+          Attribution 3.0 License</a>.
+        </p>
+      
+    
+  
+  <hr>
+</div> 
+
+<section id="introduction" typeof="bibo:Chapter" resource="#introduction" rel="bibo:Chapter">
+<!--OddPage--><h2 aria-level="1" role="heading" id="h2_introduction"><span class="secno">1. </span>Introduction</h2>
+
+
+<p>The namespace name <code>http://purl.org/ns/cas#</code> defines terms for the SmartSociety Collective Adaptive Systems (CAS). 
+
+</p><p>
+The index below provides links directly to the definition of the terms within the above specifications. 
+</p></section>
+
+
+<section id="definitions" typeof="bibo:Chapter" resource="#definitions" rel="bibo:Chapter">
+<!--OddPage--><h2 aria-level="1" role="heading" id="h2_definitions"><span class="secno">2. </span>Index</h2>
+<a href="#A">A</a> | <a href="#B">B</a> | <a href="#C">C</a>
+| <a href="#D">D</a> | <a href="#E">E</a> | <a href="#G">G</a>
+| <a href="#H">H</a> | <a href="#I">I</a> | <a href="#K">K</a> | <a href="#L">L</a>
+| <a href="#M">M</a> | <a href="#O">O</a> | <a href="#P">P</a> | <a href="#Q">Q</a>
+| <a href="#R">R</a> | <a href="#S">S</a> | <a href="#U">U</a> | <a href="#V">V</a>
+| <a href="#W">W</a>
+<hr>
+<p id="A" style="font-size: 300%;">A</p>
+
+<div id="Article"> 
+             <h2 id="article">Article</h2>
+<p></p><div class="glossary-ref">   An <dfn id="concept-article" title="Article">article</dfn>  such as a news article or piece of investigative report. Newspapers and magazines have articles of many different types and this is intended to cover them all (same as <a href="http://schema.org/Article">schema:Article</a>). </div><p></p> 
+             <p>             </p><table>
+             <tbody><tr>
+             <td>pic:</td>             <td><a href="http://www.ipaw.info/ns/picaso#Article">Article</a></td>             </tr>
+             </tbody></table> 
+             <p></p>             </div>
+
+
+
+<div id="Author"> 
+             <h2 id="author">Author</h2>
+<p></p><div class="glossary-ref">   An <dfn id="concept-author" title="Author">Author</dfn>  is the <a href="http://www.w3c.org/ns/prov#Agent">prov:Agent</a>  to which  some creative work is attributed as its author. </div><p></p> 
+             <p>             </p><table>
+             <tbody><tr>
+             <td>pic:</td>             <td><a href="http://www.ipaw.info/ns/picaso#Author">Author</a></td>             </tr>
+             </tbody></table> 
+             <p></p>             </div>
+
+<p id="B" style="font-size: 300%;">B</p>
+
+<div id="BindingsDerivation"> 
+             <h3 id="bindingsderivation" aria-level="1" role="heading">BindingsDerivation</h3>
+<p></p><div class="glossary-ref">   A <dfn id="concept-bindingsderivation" title="BindingsDerivation">BindingsDerivation</dfn> is the transformation that led to some document given a set of bindings (subtype of <a href="http://www.w3c.org/ns/prov#Derivation">prov:Derivation</a>). </div><p></p> 
+             <p>             </p><table>
+             <tbody><tr>
+             <td>pic:</td>             <td><a href="http://www.ipaw.info/ns/picaso#BindingsDerivation">BindingsDerivation</a></td>             </tr>
+             </tbody></table> 
+             <p></p>             </div>
+
+
+
+<div id="Book"> 
+             <h3 id="book">Book</h3>
+<p></p><div class="glossary-ref">   A <dfn id="concept-book" title="Book">book</dfn> (same as <a href="http://schema.org/Book">schema:Book</a>). </div><p></p> 
+             <p>             </p><table>
+             <tbody><tr>
+             <td>pic:</td>             <td><a href="http://www.ipaw.info/ns/picaso#Book">Book</a></td>             </tr>
+             </tbody></table> 
+             <p></p>             </div>
+
+<p id="C" style="font-size: 300%;">C</p>
+
+<div id="Citation"> 
+             <h3 id="citation">Citation</h3>
+<p></p><div class="glossary-ref">   A <dfn id="concept-citation" title="Citation">Citation</dfn>  a reference to another creative work (especially in a scholarly work). (subtype of <a href="http://www.w3c.org/ns/prov#Derivation">prov:Derivation</a>). </div><p></p> 
+             <p>             </p><table>
+             <tbody><tr>
+             <td>pic:</td>             <td><a href="http://www.ipaw.info/ns/picaso#Citation">Citation</a></td>             </tr>
+             </tbody></table> 
+             <p></p>             </div>
+
+
+
+<div id="Code"> 
+             <h3 id="code">Code</h3>
+<p></p><div class="glossary-ref">   <dfn id="concept-code" title="Code">Code</dfn>  means computer programming source code. Example: Full (compile ready) solutions, code snippet samples, scripts, templates (same as <a href="http://schema.org/Code">schema:Code</a>). </div><p></p> 
+             <p>             </p><table>
+             <tbody><tr>
+             <td>pic:</td>             <td><a href="http://www.ipaw.info/ns/picaso#Code">Code</a></td>             </tr>
+             </tbody></table> 
+             <p></p>             </div>
+
+
+
+<div id="Contributor"> 
+             <h3 id="contributor">Contributor</h3>
+<p></p><div class="glossary-ref"> A <dfn id="concept-contributor" title="Contributor">Contributor</dfn> a person who contributes to some creative work, but the nature of the contribution is not specific. It is the <a href="http://www.w3c.org/ns/prov#Agent">prov:Agent</a> to which some creative work is attributed as its contributor. </div><p></p> 
+             <p>             </p><table>
+             <tbody><tr>
+             <td>pic:</td>             <td><a href="http://www.ipaw.info/ns/picaso#Contributor">Contributor</a></td>             </tr>
+             </tbody></table> 
+             <p></p>             </div>
+
+<p id="D" style="font-size: 300%;">D</p>
+
+<div id="Dataset"> 
+             <h3 id="dataset">Dataset</h3>
+<p></p><div class="glossary-ref">   A <dfn id="concept-dataset" title="Dataset">dataset</dfn> is a body of structured information describing some topic(s) of interest (same as <a href="http://schema.org/Dataset">schema:Dataset</a>). </div><p></p> 
+             <p>             </p><table>
+             <tbody><tr>
+             <td>pic:</td>             <td><a href="http://www.ipaw.info/ns/picaso#Dataset">Dataset</a></td>             </tr>
+             </tbody></table> 
+             <p></p>             </div>
+
+<p id="E" style="font-size: 300%;">E</p>
+
+<div id="Editor"> 
+             <h3 id="editor">Editor</h3>
+<p></p><div class="glossary-ref">   An <dfn id="concept-editor" title="Editor">Editor</dfn>  is the <a href="http://www.w3c.org/ns/prov#Agent">prov:Agent</a>  to which  some creative work is attributed as its editor. </div><p></p> 
+             <p>             </p><table>
+             <tbody><tr>
+             <td>pic:</td>             <td><a href="http://www.ipaw.info/ns/picaso#Editor">Editor</a></td>             </tr>
+             </tbody></table> 
+             <p></p>             </div>
+
+
+
+<div id="Expansion"> 
+             <h3 id="expansion">Expansion</h3>
+<p></p><div class="glossary-ref">   An <dfn id="concept-expansion" title="Expansion">expansion</dfn> is the transformation that lead to some document after expansion of a template (subtype of <a href="http://www.w3c.org/ns/prov#Derivation">prov:Derivation</a>). </div><p></p> 
+             <p>             </p><table>
+             <tbody><tr>
+             <td>pic:</td>             <td><a href="http://www.ipaw.info/ns/picaso#Expansion">Expansion</a></td>             </tr>
+             </tbody></table> 
+             <p></p>             </div>
+
+<p id="F" style="font-size: 300%;">F</p>
+
+<div id="Figure"> 
+             <h3 id="figure">Figure</h3>
+<p></p><div class="glossary-ref">   A <dfn id="concept-figure" title="Figure">figure</dfn> is a diagram or illustrative drawing (same as <a href="http://schema.org/ImageObject">schema:ImageObject</a>). </div><p></p> 
+             <p>             </p><table>
+             <tbody><tr>
+             <td>pic:</td>             <td><a href="http://www.ipaw.info/ns/picaso#Figure">Figure</a></td>             </tr>
+             </tbody></table> 
+             <p></p>             </div>
+
+
+
+<div id="Funder"> 
+             <h3 id="funder">Funder</h3>
+<p></p><div class="glossary-ref"> A <dfn id="concept-funder" title="Funder">Funder</dfn> a person or organization who financially  supported  some creative work. It is the <a href="http://www.w3c.org/ns/prov#Agent">prov:Agent</a> to which some creative work is attributed as its funder. </div><p></p> 
+             <p>             </p><table>
+             <tbody><tr>
+             <td>pic:</td>             <td><a href="http://www.ipaw.info/ns/picaso#Funder">Funder</a></td>             </tr>
+             </tbody></table> 
+             <p></p>             </div>
+
+<p id="M" style="font-size: 300%;">M</p>
+
+<div id="Mention"> 
+             <h3 id="mention">Mention</h3>
+<p></p><div class="glossary-ref">   A <dfn id="concept-mention" title="Mention">mention</dfn> is a reference to someone or something. e.g. a tweet mentions a presentation. (subtype of <a href="http://www.w3c.org/ns/prov#Derivation">prov:Derivation</a>). </div><p></p> 
+             <p>             </p><table>
+             <tbody><tr>
+             <td>pic:</td>             <td><a href="http://www.ipaw.info/ns/picaso#Mention">Mention</a></td>             </tr>
+             </tbody></table> 
+             <p></p>             </div>
+
+<p id="P" style="font-size: 300%;">P</p>
+
+<div id="PresentationActivity"> 
+             <h3 id="presentationactivity">PresentationActivity</h3>
+<p></p><div class="glossary-ref">   A <dfn id="concept-presentationactivity" title="PresentationActivity">PresentationActivity</dfn> is an activity during which some creative work is presented to an audience (subtype of <a href="http://www.w3c.org/ns/prov#Activity">prov:Activity</a>). </div><p></p> 
+             <p>             </p><table>
+             <tbody><tr>
+             <td>pic:</td>             <td><a href="http://www.ipaw.info/ns/picaso#PresentationActivity">PresentationActivity</a></td>             </tr>
+             </tbody></table> 
+             <p></p>             </div>
+
+
+
+<div id="Poster"> 
+             <h3 id="poster">Poster</h3>
+<p></p><div class="glossary-ref">   A <dfn id="concept-poster" title="Poster">poster</dfn> is a large, usually printed placard, bill, or announcement, often illustrated, that is posted to advertise or publicize something. </div><p></p> 
+             <p>             </p><table>
+             <tbody><tr>
+             <td>pic:</td>             <td><a href="http://www.ipaw.info/ns/picaso#Poster">Poster</a></td>             </tr>
+             </tbody></table> 
+             <p></p>             </div>
+
+<p id="R" style="font-size: 300%;">R</p>
+
+<div id="Reviewer"> 
+             <h3 id="reviewer">Reviewer</h3>
+<p></p><div class="glossary-ref">   A <dfn id="concept-reviewer" title="Reviewer">Reviewer</dfn>  a person who writes critical appraisals of creative works. It  is the <a href="http://www.w3c.org/ns/prov#Agent">prov:Agent</a>  to which  some creative work is attributed as its reviewer. </div><p></p> 
+             <p>             </p><table>
+             <tbody><tr>
+             <td>pic:</td>             <td><a href="http://www.ipaw.info/ns/picaso#Reviewer">Reviewer</a></td>             </tr>
+             </tbody></table> 
+             <p></p>             </div>
+
+<p id="S" style="font-size: 300%;">S</p>
+
+<div id="ScheduledSession"> 
+             <h3 id="scheduledsession">ScheduledSession</h3>
+<p></p><div class="glossary-ref">   A <dfn id="concept-scheduledsession" title="ScheduledSession">ScheduledSession</dfn>  is a planned period devoted to a particular activity (subtype of <a href="http://www.w3c.org/ns/prov#Plan">prov:Plan</a>). </div><p></p> 
+             <p>             </p><table>
+             <tbody><tr>
+             <td>pic:</td>             <td><a href="http://www.ipaw.info/ns/picaso#ScheduledSession">ScheduledSession</a></td>             </tr>
+             </tbody></table> 
+             <p></p>             </div>
+
+
+
+<div id="Slides"> 
+             <h3 id="slides">Slides</h3>
+<p></p><div class="glossary-ref">   <dfn id="concept-slides" title="Slides">Slides</dfn> are electronic presentations consisting of a series of separate pages or slides. </div><p></p> 
+             <p>             </p><table>
+             <tbody><tr>
+             <td>pic:</td>             <td><a href="http://www.ipaw.info/ns/picaso#Slides">Slides</a></td>             </tr>
+             </tbody></table> 
+             <p></p>             </div>
+
+<p id="T" style="font-size: 300%;">T</p>
+
+<div id="Table"> 
+             <h3 id="table">Table</h3>
+<p></p><div class="glossary-ref">   A <dfn id="concept-table" title="Table">table</dfn> a set of facts or figures systematically displayed, especially in columns. (same as <a href="http://schema.org/Table">schema:Table</a>). </div><p></p> 
+             <p>             </p><table>
+             <tbody><tr>
+             <td>pic:</td>             <td><a href="http://www.ipaw.info/ns/picaso#Table">Table</a></td>             </tr>
+             </tbody></table> 
+             <p></p>             </div>
+
+
+
+<div id="Tweet"> 
+             <h3 id="tweet">Tweet</h3>
+<p></p><div class="glossary-ref">   A <dfn id="concept-tweet" title="Tweet">tweet</dfn> is a posting made on the social media website Twitter. </div><p></p> 
+             <p>             </p><table>
+             <tbody><tr>
+             <td>pic:</td>             <td><a href="http://www.ipaw.info/ns/picaso#Tweet">Tweet</a></td>             </tr>
+             </tbody></table> 
+             <p></p>             </div>
+
+</section>
+
+
+
+
+    <hr>
+    <address>
+      email address here
+   <small>$Revision: 1.1 $ of $Date: 2013/04/29$</small>
+</address>
+
+
+
+
+
+
+</body></html>
