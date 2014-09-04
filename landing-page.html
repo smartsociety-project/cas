@@ -36,26 +36,16 @@
       
       function buildIndex() {
         dict = {
-"Article":"Article",
-"Author":"Author",
-"BindingsDerivation":"bindingsderivation",
-"Book":"Book",
-"Citation":"Citation",
-"Code":"Code",
-"Contributor":"Contributor",
-"Dataset":"Dataset",
-"Editor":"Editor",
-"Expansion":"Expansion",
-"Figure":"Figure",
-"Funder":"Funder",
-"Mention":"Mention",
-"PresentationActivity":"presentationactivity",
-"Poster":"Poster",
-"Reviewer":"Reviewer",
-"ScheduledSession":"scheduledsession",
-"Slides":"Slides",
-"Table":"Table",
-"Tweet":"Tweet"}
+"Acknowledgement":"Acknowledgement",
+"Credential":"Credential",
+"Feedback":"feedback",
+"Incentive":"Incentive",
+"Plan":"Plan",
+"Opinion":"Opinion",
+"Request":"Request",
+"Reward":"Reward",
+"Reputation":"reputation"
+}
         
         terms = Object.keys(dict);
         
@@ -98,8 +88,8 @@
             <p> \
             <table>\n \
             <tr>\n \
-            <td>pic:</td> \
-            <td><a href="http://www.ipaw.info/ns/picaso#' + term  +'">' + term + '</a></td> \
+            <td>cas:</td> \
+            <td><a href="http://purl.org/cas/ns#' + term  +'">' + term + '</a></td> \
             </tr>\n'
             
             source = source + ' \
@@ -205,7 +195,7 @@
 <h2>Introduction</h2>
 
 
-<p>The namespace name <code>http://purl.org/ns/cas#</code> defines terms for the SmartSociety Collective Adaptive Systems (CAS). 
+<p>The namespace name <code>http://purl.org/cas/ns#</code> defines terms for the SmartSociety Collective Adaptive Systems (CAS). 
 
 <p>
 The index below provides links directly to the definition of the terms within the above specifications. 
