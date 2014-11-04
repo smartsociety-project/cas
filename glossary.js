@@ -31,23 +31,24 @@ glossary_string=
 '--> ' + 
 ' ' + 
 '<div class="glossary" id="glossary-agent">   ' + 
-'An <dfn id="concept-agent" title="agent">agent</dfn> is anything that can possibly perform an activity. Alternatively, anything that has capabilities. ' + 
+'An <dfn id="concept-agent">agent</dfn> is anything that can possibly perform an <a>activity</a>. Alternatively, anything that has <a title="capability">capabilities</a>. ' + 
 '</div>  ' + 
 ' ' + 
 '<div class="glossary" id="glossary-user">   ' + 
-'A <dfn id="concept-user" title="user">user</dfn> is a person who is using a SmartSociety system. ' + 
+'A <dfn id="concept-user">user</dfn> is a person who is using a SmartSociety system. ' + 
 '</div>  ' + 
 ' ' + 
 '<div class="glossary" id="glossary-peer">   ' + 
-'A <dfn id="concept-peer" title="peer">peer</dfn> is a software <a>agent</a> in a SmartSociety system that represents another agent. ' + 
+'A <dfn id="concept-peer">peer</dfn> is a software <a>agent</a> in a SmartSociety system that represents another <a>agent</a>. ' + 
 '</div>  ' + 
 ' ' + 
-'<div class="glossary" id="glossary-identities">   ' + 
-'Agents, users, peers all have <dfn id="concept-identities" title="identities">identities</dfn>, an unauthenticated user gets assigned identities automatically. ' + 
+'<div class="glossary" id="glossary-identity">   ' + 
+'<a title="agent">Agents</a>, <a title="user">users</a>, <a title="peer">peers</a> all have <dfn id="concept-identity" title="identity">identities</dfn>. An unauthenticated user gets ' + 
+'assigned an identity automatically. ' + 
 '</div>  ' + 
 ' ' + 
 '<div class="glossary" id="glossary-collective">   ' + 
-'A <dfn id="concept-collective" title="collective">collective</dfn> is an agent that consists of multiple member agents. ' + 
+'A <dfn id="concept-collective" title="collective">collective</dfn> is an <a>agent</a> that consists of multiple member <a title="agent">agents</a>. ' + 
 '</div> ' + 
 ' ' + 
 '<div class="glossary" id="glossary-activity">   ' + 
@@ -55,15 +56,15 @@ glossary_string=
 '</div> ' + 
 ' ' + 
 '<div class="glossary" id="glossary-capability">   ' + 
-'A <dfn id="concept-capability" title="capability">capability</dfn> is a prospective, though not necessarily planned or agreed, activity. ' + 
+'A <dfn id="concept-capability">capability</dfn> is a prospective, though not necessarily planned or agreed, <a>activity</a>. ' + 
 '</div>  ' + 
 ' ' + 
 '<div class="glossary" id="glossary-task">   ' + 
-'A <dfn id="concept-task" title="task">task</dfn> is something that involves capabilities, potentially contributed by several agents. ' + 
+'A <dfn id="concept-task">task</dfn> is something that involves <a title="capability">capabilities</a>, potentially contributed by several <a title="agent">agents</a>. ' + 
 '</div> ' + 
 ' ' + 
 '<div class="glossary" id="glossary-plan">   ' + 
-'A <dfn id="concept-plan" title="plan">plan</dfn> is a specification for the execution of a task. ' + 
+'A <dfn id="concept-plan" title="plan">plan</dfn> is a specification for the execution of a <a>task</a>. ' + 
 '</div> ' + 
 ' ' + 
 '<div class="glossary" id="glossary-protocol">   ' + 
@@ -75,7 +76,7 @@ glossary_string=
 '</div> ' + 
 ' ' + 
 '<div class="glossary" id="glossary-message">   ' + 
-'A <dfn id="concept-message" title="message">message</dfn> is a piece of information exchanged between agents. ' + 
+'A <dfn id="concept-message" title="message">message</dfn> is a piece of information exchanged between <a title="agent">agents</a>. ' + 
 '</div> ' + 
 ' ' + 
 '<!-- Reputation concepts--> ' + 
@@ -98,15 +99,15 @@ glossary_string=
 '</div>  ' + 
 ' ' + 
 '<div class="glossary" id="glossary-submit_feedback">   ' + 
-'A <dfn id="concept-submit_feedback" title="Submit Feedback">submit_feedback</dfn> is an activity that submits a feedback report to the reputation peer. ' + 
+'A <dfn id="concept-submit_feedback" title="Submit Feedback">submit_feedback</dfn> is an <a>activity</a> that submits a feedback report to the reputation peer. ' + 
 '</div>  ' + 
 ' ' + 
 '<div class="glossary" id="glossary-store_feedback">   ' + 
-'A <dfn id="concept-store_feedback" title="Store Feedback">store_feedback</dfn> is an activity used by reputation peer to store a feedback report within it. ' + 
+'A <dfn id="concept-store_feedback" title="Store Feedback">store_feedback</dfn> is an <a>activity</a> used by reputation peer to store a feedback report within it. ' + 
 '</div>  ' + 
 ' ' + 
 '<div class="glossary" id="glossary-compute_reputation">   ' + 
-'A <dfn id="concept-compute_reputation" title="Compute Reputation">compute_reputation</dfn> is an activity that is run by the reputation peer when a feedback report is submit, it computes a reputation report for all the subjects referred to by the submitted feedback report. ' + 
+'A <dfn id="concept-compute_reputation" title="Compute Reputation">compute_reputation</dfn> is an <a>activity</a> that is run by the reputation peer when a feedback report is submit, it computes a reputation report for all the subjects referred to by the submitted feedback report. ' + 
 '</div>  ' + 
 ' ' + 
 '<div class="glossary" id="glossary-feedback_category">   ' + 
@@ -129,39 +130,39 @@ glossary_string=
 '</div>  ' + 
 ' ' + 
 '<div class="glossary" id="glossary-composition_activity">   ' + 
-'A <dfn id="concept-composition_activity" title="composition_activity">composition_activity</dfn> is an activity that may be comprised of the following activities authenticate, compute_composition and compute_task_complement. ' + 
+'A <dfn id="concept-composition_activity" title="composition_activity">composition_activity</dfn> is an <a>activity</a> that may be comprised of the following activities authenticate, compute_composition and compute_task_complement. ' + 
 '</div>  ' + 
 ' ' + 
 '<div class="glossary" id="glossary-authenticate_activity">   ' + 
-'An <dfn id="concept-authenticate_activity" title="authenticate_activity">authenticate_activity</dfn> is an activity which authenticates a user. ' + 
+'An <dfn id="concept-authenticate_activity" title="authenticate_activity">authenticate_activity</dfn> is an <a>activity</a> which authenticates a user. ' + 
 '</div>  ' + 
 ' ' + 
 '<div class="glossary" id="glossary-store_task"> ' + 
-'A <dfn id="concept-store_task" title="store_task">store_task</dfn> is an activity that stores a task locally. ' + 
+'A <dfn id="concept-store_task" title="store_task">store_task</dfn> is an <a>activity</a> that stores a <a>task</a> locally. ' + 
 '</div>  ' + 
 ' ' + 
 '<div class="glossary" id="glossary-compute_task_complement">   ' + 
-'A <dfn id="concept-compute_task_complement" title="compute_task_complement">compute_task_complement</dfn> is an activity that identifies which set of tasks that are no longer valid. ' + 
+'A <dfn id="concept-compute_task_complement" title="compute_task_complement">compute_task_complement</dfn> is an <a>activity</a> that identifies which set of <a title="task">tasks</a> that are no longer valid. ' + 
 '</div>  ' + 
 ' ' + 
 '<div class="glossary" id="glossary-compute_composition">   ' + 
-'A <dfn id="concept-compute_composition" title="compute_composition">compute_composition</dfn> is an activity that computes a set of valid tasks given constraints or negiotation inputs. ' + 
+'A <dfn id="concept-compute_composition" title="compute_composition">compute_composition</dfn> is an <a>activity</a> that computes a set of valid <a title="task">tasks</a> given constraints or negiotation inputs. ' + 
 '</div>  ' + 
 ' ' + 
 '<div class="glossary" id="glossary-submit_activity">   ' + 
-'A <dfn id="concept-submit_activity" title="submit_activity">submit_activity</dfn> is an activity which submits a task, it may comprise of an authenticate and store_task activities. ' + 
+'A <dfn id="concept-submit_activity" title="submit_activity">submit_activity</dfn> is an <a>activity</a> that submits a <a>task</a>, it may comprise of an authenticate and store_task activities. ' + 
 '</div>  ' + 
 ' ' + 
 '<div class="glossary" id="glossary-send_negotiation_response">   ' + 
-'A <dfn id="concept-send_negotiation_response" title="send_negotiation_response">send_negotiation_response</dfn> is an entity that contains the response to a negotiation activity. ' + 
+'A <dfn id="concept-send_negotiation_response" title="send_negotiation_response">send_negotiation_response</dfn> is an entity that contains the response to a <a>negotiation activity</a>. ' + 
 '</div>  ' + 
 ' ' + 
 '<div class="glossary" id="glossary-negotiation_activity">   ' + 
-'A <dfn id="concept-negotiation_activity" title="negotiation_activity">negotiation_activity</dfn> is an activity which submits a task, it may comprise of an authenticate and store_task activities. ' + 
+'A <dfn id="concept-negotiation_activity">negotiation activity</dfn> is an activity that submits a <a>task</a>, it may comprise of an authenticate and store_task activities. ' + 
 '</div>  ' + 
 ' ' + 
 '<div class="glossary" id="glossary-post_task_request">   ' + 
-'A <dfn id="concept-post_task_request" title="post_task_request">post_task_request</dfn> is an activity that posts a task to orchestration peer.  ' + 
+'A <dfn id="concept-post_task_request" title="post_task_request">post_task_request</dfn> is an <a>activity</a> that posts a <a>task</a> to orchestration peer.  ' + 
 '</div>  ' + 
 ' ' + 
 '<div class="glossary" id="glossary-authenticated_user">   ' + 
@@ -169,7 +170,7 @@ glossary_string=
 '</div>   ' + 
 ' ' + 
 '<div class="glossary" id="glossary-request_opinion">   ' + 
-'A <dfn id="concept-request_opinion" title="request opinion">request opinion</dfn> is an activity that requests a opinion report from the reputation peer. ' + 
+'A <dfn id="concept-request_opinion" title="request opinion">request opinion</dfn> is an <a>activity</a> that requests a opinion report from the reputation peer. ' + 
 '</div>   ' + 
 ' ' + 
 '<div class="glossary" id="glossary-offer">   ' + 
@@ -180,7 +181,7 @@ glossary_string=
 '<!-- UI --> ' + 
 ' ' + 
 '<div class="glossary" id="glossary-change_view">   ' + 
-'A <dfn id="concept-change_view" title="change_view">change_view</dfn> is an activity that changed the view of a user interface. ' + 
+'A <dfn id="concept-change_view" title="change_view">change_view</dfn> is an <a>activity</a> that changed the view of a user interface. ' + 
 '</div>  ' + 
 ' ' + 
 '<div class="glossary" id="glossary-reputation_peer">   ' + 
@@ -190,11 +191,11 @@ glossary_string=
 '<!-- General concepts --> ' + 
 ' ' + 
 '<div class="glossary" id="glossary-client">   ' + 
-'A <dfn id="concept-client" title="client">client</dfn> is an agent that acts as a client, specifically a service or workstation that is capable of obtaining information and applications from a server. ' + 
+'A <dfn id="concept-client" title="client">client</dfn> is an <a>agent</a> that acts as a client, specifically a service or workstation that is capable of obtaining information and applications from a server. ' + 
 '</div>  ' + 
 ' ' + 
 '<div class="glossary" id="glossary-peer">   ' + 
-'A <dfn id="concept-peer" title="peer">peer</dfn> is an agent that manages a specific set of domain tasks. ' + 
+'A <dfn id="concept-peer" title="peer">peer</dfn> is an <a>agent</a> that manages a specific set of domain <a title="task">tasks</a>. ' + 
 '</div>  ' + 
 ' ' + 
 '<div class="glossary" id="glossary-username">   ' + 
@@ -214,11 +215,11 @@ glossary_string=
 '</div>   ' + 
 ' ' + 
 '<div class="glossary" id="glossary-respond">   ' + 
-'A <dfn id="concept-respond" title="Respond">respond</dfn> is an activity that is used to  respond to an API call. ' + 
+'A <dfn id="concept-respond" title="Respond">respond</dfn> is an <a>activity</a> that is used to  respond to an API call. ' + 
 '</div>  ' + 
 ' ' + 
 '<div class="glossary" id="glossary-send_request">   ' + 
-'A <dfn id="send_request" title="Send Request">send_request</dfn> is an activity that sends a request to peer. ' + 
+'A <dfn id="send_request" title="Send Request">send_request</dfn> is an <a>activity</a> that sends a request to peer. ' + 
 '</div>   ' + 
 ' ' + 
 '<div class="glossary" id="glossary-response">   ' + 
