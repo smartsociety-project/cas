@@ -138,7 +138,7 @@ glossary_string=
 '</div>  ' + 
 ' ' + 
 '<div class="glossary" id="glossary-store_task"> ' + 
-'A <dfn id="concept-store_task" title="store_task">store_task</dfn> is an <a>activity</a> that stores a <a>task</a> locally. ' + 
+'A <dfn id="concept-store_task" >store task</dfn> is an <a>activity</a> that stores a <a>task</a> locally. ' + 
 '</div>  ' + 
 ' ' + 
 '<div class="glossary" id="glossary-compute_task_complement">   ' + 
@@ -150,7 +150,7 @@ glossary_string=
 '</div>  ' + 
 ' ' + 
 '<div class="glossary" id="glossary-submit_activity">   ' + 
-'A <dfn id="concept-submit_activity" title="submit_activity">submit_activity</dfn> is an <a>activity</a> that submits a <a>task</a>, it may comprise of an authenticate and store_task activities. ' + 
+'A <dfn id="concept-submit_activity" title="submit_activity">submit_activity</dfn> is an <a>activity</a> that submits a <a>task</a>, it may comprise of an <a title="authenticate activity">authenticate</a> and <a>store task</a> activities. ' + 
 '</div>  ' + 
 ' ' + 
 '<div class="glossary" id="glossary-send_negotiation_response">   ' + 
