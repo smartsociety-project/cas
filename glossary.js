@@ -68,7 +68,7 @@ glossary_string=
 '</div> ' + 
 ' ' + 
 '<div class="glossary" id="glossary-protocol">   ' + 
-'A <dfn id="concept-protocol">protocol</dfn> is a collection of <a title="plan">plans</a> that involve communications between peers. ' + 
+'A <dfn id="concept-protocol">protocol</dfn> is a collection of <a title="plan">plans</a> that involve communications between <a title="peer">peers</a>. ' + 
 '</div> ' + 
 ' ' + 
 '<div class="glossary" id="glossary-messaging_action">   ' + 
@@ -165,23 +165,23 @@ glossary_string=
 'A <dfn id="concept-post_task_request" title="post_task_request">post_task_request</dfn> is an <a>activity</a> that posts a <a>task</a> to orchestration peer.  ' + 
 '</div>  ' + 
 ' ' + 
-'<div class="glossary" id="glossary-authenticated user">   ' + 
-'An <dfn id="concept-authenticated-user">authenticated user</dfn> is a <a>user</a> that has been authenticated by the peer profile peer using credentials. ' + 
+'<div class="glossary" id="glossary-authenticated_user">   ' + 
+'An <dfn id="concept-authenticated_user">authenticated user</dfn> is a <a>user</a> that has been <a title="authenticate activity">authenticated</a> by the peer profile peer using <a title="credential">credentials</a>. ' + 
 '</div>   ' + 
 ' ' + 
 '<div class="glossary" id="glossary-request_opinion">   ' + 
-'A <dfn id="concept-request_opinion" title="request opinion">request opinion</dfn> is an <a>activity</a> that requests a opinion report from the reputation peer. ' + 
+'A <dfn id="concept-request_opinion">request opinion</dfn> is an <a>activity</a> that requests a opinion report from the reputation peer. ' + 
 '</div>   ' + 
 ' ' + 
 '<div class="glossary" id="glossary-offer">   ' + 
-'An <dfn id="concept-offer" title="Offer">offer</dfn> to transfer some rights to an item or to provide a service—for example, an offer to sell tickets to an event, to rent the DVD of a movie, to stream a TV show over the internet, to repair a motorcycle, or to loan a book ' + 
+'An <dfn id="concept-offer">offer</dfn> to transfer some rights to an item or to provide a service—for example, an offer to sell tickets to an event, to rent the DVD of a movie, to stream a TV show over the internet, to repair a motorcycle, or to loan a book ' + 
 '(same as <a href="http://schema.org/Offer">schema:Offer</a>). ' + 
 '</div>  ' + 
 ' ' + 
 '<!-- UI --> ' + 
 ' ' + 
 '<div class="glossary" id="glossary-change_view">   ' + 
-'A <dfn id="concept-change_view" title="change_view">change_view</dfn> is an <a>activity</a> that changed the view of a user interface. ' + 
+'A <dfn id="concept-change_view" title="change_view">change view</dfn> is an <a>activity</a> that changed the view of a user interface. ' + 
 '</div>  ' + 
 ' ' + 
 '<div class="glossary" id="glossary-reputation_peer">   ' + 
@@ -207,7 +207,7 @@ glossary_string=
 '</div>   ' + 
 ' ' + 
 '<div class="glossary" id="glossary-credential">   ' + 
-'A <dfn id="concept-credential" title="Credential">credential</dfn> is a username and password, which is used to authenticate a user. ' + 
+'A <dfn id="concept-credential" title="Credential">credential</dfn> is a username and password, which is used to <a title="authenticate activity">authenticate</a> a <a>user</a>. ' + 
 '</div> ' + 
 ' ' + 
 '<div class="glossary" id="glossary-acknowledgement">   ' + 
