@@ -76,7 +76,7 @@ A <dfn id="concept-message">message</dfn> is a piece of information exchanged be
 <!-- Reputation concepts-->
 
 <div class="glossary" id="glossary-reputation_peer">  
-A <dfn id="concept-reputation_peer">reputation peer</dfn> is a specialisation of a peer, which specialises in storing feedback about subjects and generating reputation and opinion reports about subjects. 
+A <dfn id="concept-reputation_peer">reputation peer</dfn> is a specialisation of a <a>peer</a>, which specialises in storing feedback about <a title="subject">subjects</a> and generating reputation and opinion reports about <a title="subject">subjects</a>. 
 </div> 
 
 <div class="glossary" id="glossary-feedback_report">  
@@ -84,47 +84,51 @@ A <dfn id="concept-feedbackReport">feedback report</dfn> is a report that is der
 </div>  
 
 <div class="glossary" id="glossary-reputation_report">  
-A <dfn id="concept-reputation_report">reputation report</dfn> is a report about a subject that contains a set of key value pairs. The key value pairs is a binding between a topic of reputation to a rating value, which is an aggregation of a set ratings for that topic.
-For example, a subject has been rated with a set of star ratings, and the average of those star ratings are "average star rating = 4.3".
+A <dfn id="concept-reputation_report">reputation report</dfn> is a report about a <a>subject</a> that contains a set of key value pairs. The key value pairs is a binding between a topic of reputation to a rating value, which is an aggregation of a set ratings for that topic.
+For example, a <a>subject</a> has been rated with a set of star ratings, and the average of those star ratings are "average star rating = 4.3".
 </div>  
 
 <div class="glossary" id="glossary-opinion_report">  
-An <dfn id="concept-opinion_report">opinion report</dfn> is a specialisation of a reputation report, which contains a single key value pair and binds an opinion to a value. The value is an aggregation of ratings from a set of reputation topics.
+An <dfn id="concept-opinion_report">opinion report</dfn> is a specialisation of a <a>reputation report</a>, which contains a single key value pair and binds an opinion to a value. The value is an aggregation of ratings from a set of reputation topics.
 </div> 
 
 <div class="glossary" id="glossary-submit_feedback">  
-A <dfn id="concept-submit_feedback">submit feedback</dfn> is an <a>activity</a> that submits a feedback report to the reputation peer.
+A <dfn id="concept-submit_feedback">submit feedback</dfn> is an <a>activity</a> that submits a <a>feedback report</a> to the <a>reputation peer</a>.
 </div> 
 
 <div class="glossary" id="glossary-store_feedback">  
-A <dfn id="concept-store_feedback">store feedback</dfn> is an <a>activity</a> used by reputation peer to store a feedback report within it.
+A <dfn id="concept-store_feedback">store feedback</dfn> is an <a>activity</a> used by <a>reputation peer</a> to store a <a>feedback report</a> within it.
 </div> 
 
 <div class="glossary" id="glossary-compute_reputation">  
-A <dfn id="concept-compute_reputation">compute reputation</dfn> is an <a>activity</a> that is run by the reputation peer when a feedback report is submitted, it computes a reputation report for all the subjects referred to by the submitted feedback report.
+A <dfn id="concept-compute_reputation">compute reputation</dfn> is an <a>activity</a> that is run by the <a>reputation peer</a> when a <a>feedback report</a> is submitted, it computes a <a>reputation report</a> for all the <a title="subject">subjects</a> referred to by the submitted <a>feedback report</a>.
 </div> 
 
 <div class="glossary" id="glossary-feedback_category">  
-A <dfn id="concept-feedback_category">feedback category</dfn> is a category which a subject is rated, in a feedback report.   
+A <dfn id="concept-feedback_category">feedback category</dfn> is a category which a <a>subject</a> is rated, in a <a>feedback report</a>.   
 </div> 
 
 <div class="glossary" id="glossary-reputation_category">  
-A <dfn id="concept-reputation_category">reputation category</dfn> is a category which a subject is rated, in a reputation  report.  
+A <dfn id="concept-reputation_category">reputation category</dfn> is a category which a <a>subject</a> is rated, in a <a>reputation report</a>.  
 </div> 
 
 <div class="glossary" id="glossary-reputation_item">  
-A <dfn id="concept-reputation_item">reputation item</dfn> is a JSON object that is returned from a GET request to the reputation peer.
+A <dfn id="concept-reputation_item">reputation item</dfn> is a JSON object that is returned from a GET request to the <a>reputation peer</a>.
 </div>
+
+<div class="glossary" id="glossary-subject">  
+A <dfn id="concept-subject">subject</dfn> ....
+</div> 
 
 
 <!-- Orchestration concepts -->
 
 <div class="glossary" id="glossary-orchestration_peer">  
-A <dfn id="concept-orchestration_peer">orchestration peer</dfn> is a specialisation of a peer, which specialises in storing feedback about subjects and generating reputation and opinion reports about subjects. 
+A <dfn id="concept-orchestration_peer">orchestration peer</dfn> is a specialisation of a <a>peer</a>, which specialises in storing feedback about <a title="subject">subjects</a> and generating  <a title="reputation report">reputation reports</a> and <a title="opinion report">opinion reports</a> about <a title="subject">subjects</a>. 
 </div> 
 
 <div class="glossary" id="glossary-composition_activity">  
-A <dfn id="concept-composition_activity">composition activity</dfn> is an <a>activity</a> that may be comprised of the following activities authenticate, compute_composition and compute_task_complement.
+A <dfn id="concept-composition_activity">composition activity</dfn> is an <a>activity</a> that may be comprised of the following <a title="activity">activities</a> <a title="authenticate activity">authenticate</a>, <a>compute composition</a> and <a title="compute task complement">compute_task_complement</a>.
 </div> 
 
 <div class="glossary" id="glossary-authenticate_activity">  
@@ -140,7 +144,7 @@ A <dfn id="concept-compute_task_complement">compute task complement</dfn> is an 
 </div> 
 
 <div class="glossary" id="glossary-compute_composition">  
-A <dfn id="concept-compute_composition">compute composition</dfn> is an <a>activity</a> that computes a set of valid <a title="task">tasks</a> given constraints or negiotation inputs.
+A <dfn id="concept-compute_composition">compute composition</dfn> is an <a>activity</a> that computes a set of valid <a title="task">tasks</a> given constraints or negotiation inputs.
 </div> 
 
 <div class="glossary" id="glossary-submit_activity">  
@@ -148,7 +152,7 @@ A <dfn id="concept-submit_activity">submit activity</dfn> is an <a>activity</a> 
 </div> 
 
 <div class="glossary" id="glossary-send_negotiation_response">  
-A <dfn id="concept-send_negotiation_response">send_negotiation_response</dfn> is an entity that contains the response to a <a>negotiation activity</a>.
+A <dfn id="concept-send_negotiation_response">send_negotiation_response</dfn> is an entity that contains the <a>response</a> to a <a>negotiation activity</a>.
 </div> 
 
 <div class="glossary" id="glossary-negotiation_activity">  
@@ -156,7 +160,7 @@ A <dfn id="concept-negotiation_activity">negotiation activity</dfn> is an activi
 </div> 
 
 <div class="glossary" id="glossary-post_task_request">  
-A <dfn id="concept-post_task_request">post task request</dfn> is an <a>activity</a> that posts a <a>task</a> to orchestration peer. 
+A <dfn id="concept-post_task_request">post task request</dfn> is an <a>activity</a> that posts a <a>task</a> to <a>orchestration peer</a>. 
 </div> 
 
 <div class="glossary" id="glossary-authenticated_user">  
@@ -164,7 +168,7 @@ An <dfn id="concept-authenticated_user">authenticated user</dfn> is a <a>user</a
 </div>  
 
 <div class="glossary" id="glossary-request_opinion">  
-A <dfn id="concept-request_opinion">request opinion</dfn> is an <a>activity</a> that requests a opinion report from the reputation peer.
+A <dfn id="concept-request_opinion">request opinion</dfn> is an <a>activity</a> that requests a <a>opinion report</a> from the <a>reputation peer</a>.
 </div>  
 
 <div class="glossary" id="glossary-offer">  
@@ -213,11 +217,11 @@ A <dfn id="concept-respond">respond</dfn> is an <a>activity</a> that is used to 
 </div> 
 
 <div class="glossary" id="glossary-send_request">  
-A <dfn id="send_request">send request</dfn> is an <a>activity</a> that sends a request to peer.
+A <dfn id="send_request">send request</dfn> is an <a>activity</a> that sends a <a>request</a> to <a>peer</a>.
 </div>  
 
 <div class="glossary" id="glossary-response">  
-A <dfn id="response">response</dfn> is an entity that is computed in response to a request.
+A <dfn id="response">response</dfn> is an entity that is computed in response to a <a>request</a>.
 </div> 
 
 <div class="glossary" id="glossary-request">  
