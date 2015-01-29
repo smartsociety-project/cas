@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" typeof="bibo:Document " about="" property="dcterms:language" content="en">
-<head> 
+<html lang="en" dir="ltr" typeof="bibo:Document " prefix="bibo: http://purl.org/ontology/bibo/ w3p: http://www.w3.org/2001/02pd/rec54#">
+<head><meta lang="" property="dc:language" content="en"> 
     <title>The SmartSociety CAS Namespace</title> 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
     <!-- 
@@ -138,11 +138,13 @@ table.simple {
 </style><link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/w3c-unofficial"><!--[if lt IE 9]><script src='https://www.w3.org/2008/site/js/html5shiv.js'></script><![endif]--></head> 
   <body class="h-entry" role="document" id="respecDocument"><div class="head" role="contentinfo" id="respecHeader">
   <p>
-    
+      
+        
+      
   </p>
   <h1 class="title p-name" id="title" property="dcterms:title">The SmartSociety CAS Namespace</h1>
   
-  <h2 property="dcterms:issued" datatype="xsd:dateTime" content="2014-09-04T12:58:29.000Z">Unofficial Draft <time class="dt-published" datetime="2014-09-04">04 September 2014</time></h2>
+  <h2 id="unofficial-draft-29-january-2015">Unofficial Draft <time property="dcterms:issued" class="dt-published" datetime="2015-01-29">29 January 2015</time></h2>
   <dl>
     
     
@@ -153,9 +155,11 @@ table.simple {
     
     
     <dt>Editors:</dt>
-    <dd class="p-author h-card vcard" rel="bibo:editor" inlist=""><span typeof="foaf:Person"><a class="u-url url p-name fn" rel="foaf:homepage" property="foaf:name" content="Heather Packer" href="http://www.ecs.soton.ac.uk/~hp3/">Heather Packer</a>, <a rel="foaf:workplaceHomepage" class="p-org org h-org h-card" href="http://www.ecs.soton.ac.uk/">University of Southampton</a></span>
+    <dd class="p-author h-card vcard" property="bibo:editor" resource="_:editor0"><span property="rdf:first" typeof="foaf:Person"><meta property="foaf:name" content="Heather Packer"><a class="u-url url p-name fn" property="foaf:homepage" href="http://www.ecs.soton.ac.uk/~hp3/">Heather Packer</a>, <a property="foaf:workplaceHomepage" class="p-org org h-org h-card" href="http://www.ecs.soton.ac.uk/">University of Southampton</a></span>
+<span property="rdf:rest" resource="_:editor1"></span>
 </dd>
-<dd class="p-author h-card vcard" rel="bibo:editor" inlist=""><span typeof="foaf:Person"><a class="u-url url p-name fn" rel="foaf:homepage" property="foaf:name" content="Luc Moreau" href="http://www.ecs.soton.ac.uk/~lavm/">Luc Moreau</a>, <a rel="foaf:workplaceHomepage" class="p-org org h-org h-card" href="http://www.ecs.soton.ac.uk/">University of Southampton</a></span>
+<dd class="p-author h-card vcard" resource="_:editor1"><span property="rdf:first" typeof="foaf:Person"><meta property="foaf:name" content="Luc Moreau"><a class="u-url url p-name fn" property="foaf:homepage" href="http://www.ecs.soton.ac.uk/~lavm/">Luc Moreau</a>, <a property="foaf:workplaceHomepage" class="p-org org h-org h-card" href="http://www.ecs.soton.ac.uk/">University of Southampton</a></span>
+<span property="rdf:rest" resource="rdf:nil"></span>
 </dd>
 
     
@@ -178,8 +182,8 @@ table.simple {
   <hr>
 </div> 
 
-<section id="introduction" typeof="bibo:Chapter" resource="#introduction" rel="bibo:Chapter">
-<h2 aria-level="1" role="heading" id="h2_introduction">Introduction</h2>
+<section id="introduction" typeof="bibo:Chapter" resource="#introduction" property="bibo:hasPart">
+<!--OddPage--><h2 id="h-introduction" resource="#h-introduction"><span property="xhv:role" resource="xhv:heading"><span class="secno">1. </span>Introduction</span></h2>
 
 
 <p>The namespace name <code>http://purl.org/cas/ns#</code> defines terms for the SmartSociety Collective Adaptive Systems (CAS). 
@@ -189,11 +193,10 @@ The index below provides links directly to the definition of the terms within th
 </p></section>
 
 
-<section id="definitions" typeof="bibo:Chapter" resource="#definitions" rel="bibo:Chapter">
-<h2 aria-level="1" role="heading" id="h2_definitions">Index</h2>
-<a href="#A">A</a> | <a href="#B">B</a> | <a href="#C">C</a>
-| <a href="#D">D</a> | <a href="#E">E</a> | <a href="#G">G</a>
-| <a href="#H">H</a> | <a href="#I">I</a> | <a href="#K">K</a> | <a href="#L">L</a>
+<section id="definitions" typeof="bibo:Chapter" resource="#definitions" property="bibo:hasPart">
+<!--OddPage--><h2 id="h-definitions" resource="#h-definitions"><span property="xhv:role" resource="xhv:heading"><span class="secno">2. </span>Index</span></h2>
+<a href="#A">A</a> | <a href="#C">C</a> | <a href="#F">F</a>
+| <a href="#I">I</a> | <a href="#K">K</a> | <a href="#L">L</a>
 | <a href="#M">M</a> | <a href="#O">O</a> | <a href="#P">P</a> | <a href="#Q">Q</a>
 | <a href="#R">R</a> | <a href="#S">S</a> | <a href="#U">U</a> | <a href="#V">V</a>
 | <a href="#W">W</a>
@@ -201,85 +204,316 @@ The index below provides links directly to the definition of the terms within th
 <p id="A" style="font-size: 300%;">A</p>
 
 <div id="Acknowledgement"> 
-             <h3 aria-level="1" role="heading" id="h3_undefined">Acknowledgement</h3>
-<p></p><div class="glossary-ref">   An <dfn id="concept-acknowledgement" title="Acknowledgement">acknowledgement</dfn> is ... </div><p></p> 
+             <h2 id="acknowledgement">Acknowledgement</h2>
+<p></p><div class="glossary-ref">   An <dfn id="concept-acknowledgement">acknowledgement</dfn> is a message that is passed between two cas:agents to signify acknowledgement, or receipt of a response, which is part of a communications protocol. </div><p></p> 
              <p>             </p><table>
              <tbody><tr>
              <td>cas:</td>             <td><a href="http://purl.org/cas/ns#Acknowledgement">Acknowledgement</a></td>             </tr>
              </tbody></table> 
              <p></p>             </div>
 
-<p id="C" style="font-size: 300%;">C</p>
 
-<div id="Credential"> 
-             <h3>Credential</h3>
-<p></p><div class="glossary-ref">   A <dfn id="concept-credential" title="Credential">credential</dfn> ... </div><p></p> 
+
+<div id="Activity"> 
+             <h2 id="activity">Activity</h2>
+<p></p><div class="glossary-ref">   An <dfn id="concept-activity">activity</dfn> is the condition in which things are happening or being done. </div><p></p> 
              <p>             </p><table>
              <tbody><tr>
-             <td>cas:</td>             <td><a href="http://purl.org/cas/ns#Credential">Credential</a></td>             </tr>
+             <td>cas:</td>             <td><a href="http://purl.org/cas/ns#Activity">Activity</a></td>             </tr>
+             </tbody></table> 
+             <p></p>             </div>
+
+
+
+<div id="Agent"> 
+             <h3 id="agent">Agent</h3>
+<p></p><div class="glossary-ref">   An <dfn id="concept-agent">agent</dfn> is anything that can possibly perform an <a href="#concept-activity" class="internalDFN">activity</a>. Alternatively, anything that has <a title="capability" href="#concept-capability" class="internalDFN">capabilities</a>. </div><p></p> 
+             <p>             </p><table>
+             <tbody><tr>
+             <td>cas:</td>             <td><a href="http://purl.org/cas/ns#Agent">Agent</a></td>             </tr>
+             </tbody></table> 
+             <p></p>             </div>
+
+
+
+<div id="Authenticating_Activity"> 
+             <h3 id="authenticating_activity">Authenticating_Activity</h3>
+<p></p><div class="glossary-ref"></div><p></p> 
+             <p>             </p><table>
+             <tbody><tr>
+             <td>cas:</td>             <td><a href="http://purl.org/cas/ns#Authenticating_Activity">Authenticating_Activity</a></td>             </tr>
+             </tbody></table> 
+             <p></p>             </div>
+
+<p id="C" style="font-size: 300%;">C</p>
+
+<div id="Capability"> 
+             <h3 id="capability">Capability</h3>
+<p></p><div class="glossary-ref">   A <dfn id="concept-capability">capability</dfn> is a prospective, though not necessarily planned or agreed, <a href="#concept-activity" class="internalDFN">activity</a>. </div><p></p> 
+             <p>             </p><table>
+             <tbody><tr>
+             <td>cas:</td>             <td><a href="http://purl.org/cas/ns#Capability">Capability</a></td>             </tr>
+             </tbody></table> 
+             <p></p>             </div>
+
+
+
+<div id="Changing_View"> 
+             <h3 id="changing_view">Changing_View</h3>
+<p></p><div class="glossary-ref">   A <dfn id="concept-changing_view">changing view</dfn> is an <a href="#concept-activity" class="internalDFN">activity</a> that changed the view of a user interface. </div><p></p> 
+             <p>             </p><table>
+             <tbody><tr>
+             <td>cas:</td>             <td><a href="http://purl.org/cas/ns#Changing_View">Changing_View</a></td>             </tr>
+             </tbody></table> 
+             <p></p>             </div>
+
+
+
+<div id="Collective"> 
+             <h3 id="collective">Collective</h3>
+<p></p><div class="glossary-ref">   A <dfn id="concept-collective">collective</dfn> is an <a href="#concept-agent" class="internalDFN">agent</a> that consists of multiple member <a title="agent" href="#concept-agent" class="internalDFN">agents</a>. </div><p></p> 
+             <p>             </p><table>
+             <tbody><tr>
+             <td>cas:</td>             <td><a href="http://purl.org/cas/ns#Collective">Collective</a></td>             </tr>
+             </tbody></table> 
+             <p></p>             </div>
+
+
+
+<div id="Composing_Activity"> 
+             <h3 id="composing_activity">Composing_Activity</h3>
+<p></p><div class="glossary-ref">   A <dfn id="concept-composing_activity">composing activity</dfn> is an <a href="#concept-activity" class="internalDFN">activity</a> that may be comprised of the following <a title="activity" href="#concept-activity" class="internalDFN">activities</a> <a title="authenticating activity" href="#concept-authenticate_activity" class="internalDFN">authenticating activity</a>, <a title="computing composition" href="#concept-computing_composition" class="internalDFN"> computing composition</a> and <a title="computing task complement" href="#concept-computing_task_complement" class="internalDFN">computing_task_complement</a>. </div><p></p> 
+             <p>             </p><table>
+             <tbody><tr>
+             <td>cas:</td>             <td><a href="http://purl.org/cas/ns#Composing_Activity">Composing_Activity</a></td>             </tr>
+             </tbody></table> 
+             <p></p>             </div>
+
+
+
+<div id="Computing_Composition"> 
+             <h3 id="computing_composition">Computing_Composition</h3>
+<p></p><div class="glossary-ref">   A <dfn id="concept-computing_composition">computing composition</dfn> is an <a href="#concept-activity" class="internalDFN">activity</a> that computes a set of valid <a title="task" href="#concept-task" class="internalDFN">tasks</a> given constraints or negotiation inputs. </div><p></p> 
+             <p>             </p><table>
+             <tbody><tr>
+             <td>cas:</td>             <td><a href="http://purl.org/cas/ns#Computing_Composition">Computing_Composition</a></td>             </tr>
+             </tbody></table> 
+             <p></p>             </div>
+
+
+
+<div id="Computing_Reputation"> 
+             <h3 id="computing_reputation">Computing_Reputation</h3>
+<p></p><div class="glossary-ref">   A <dfn id="concept-computing_reputation">computing reputation</dfn> is an <a href="#concept-activity" class="internalDFN">activity</a> that is run by the <a href="#concept-reputation_peer" class="internalDFN">reputation peer</a> when a <a href="#concept-feedbackReport" class="internalDFN">feedback report</a> is submitted, it computes a <a href="#concept-reputation_report" class="internalDFN">reputation report</a> for all the <a title="subject" href="#concept-subject" class="internalDFN">subjects</a> referred to by the submitted <a href="#concept-feedbackReport" class="internalDFN">feedback report</a>. </div><p></p> 
+             <p>             </p><table>
+             <tbody><tr>
+             <td>cas:</td>             <td><a href="http://purl.org/cas/ns#Computing_Reputation">Computing_Reputation</a></td>             </tr>
+             </tbody></table> 
+             <p></p>             </div>
+
+
+
+<div id="Computing_Task_Complement"> 
+             <h3 id="computing_task_complement">Computing_Task_Complement</h3>
+<p></p><div class="glossary-ref"> A <dfn id="concept-computing_task_complement">computing task complement</dfn> is an <a href="#concept-activity" class="internalDFN">activity</a> that identifies which set of <a title="task" href="#concept-task" class="internalDFN">tasks</a> that are no longer valid. </div><p></p> 
+             <p>             </p><table>
+             <tbody><tr>
+             <td>cas:</td>             <td><a href="http://purl.org/cas/ns#Computing_Task_Complement">Computing_Task_Complement</a></td>             </tr>
              </tbody></table> 
              <p></p>             </div>
 
 <p id="F" style="font-size: 300%;">F</p>
 
-<div id="Feedback"> 
-             <h3>Feedback</h3>
-<p></p><div class="glossary-ref">   A <dfn id="concept-feedback" title="Feedback">feedback</dfn> is a report that is derived from an event or experience, and consists of a set of key value pairs, which binds a topic of reputation to a rating value. For example, a participant has taken part in an event and leaves feedback for about their “star rating = 5”. </div><p></p> 
+<div id="Feedback_Category"> 
+             <h3 id="feedback_category">Feedback_Category</h3>
+<p></p><div class="glossary-ref">   A <dfn id="concept-feedback_category">feedback category</dfn> is a category used to rate a <a href="#concept-subject" class="internalDFN">subject</a>, in a <a href="#concept-feedbackReport" class="internalDFN">feedback report</a>.    </div><p></p> 
              <p>             </p><table>
              <tbody><tr>
-             <td>cas:</td>             <td><a href="http://purl.org/cas/ns#Feedback">Feedback</a></td>             </tr>
+             <td>cas:</td>             <td><a href="http://purl.org/cas/ns#Feedback_Category">Feedback_Category</a></td>             </tr>
+             </tbody></table> 
+             <p></p>             </div>
+
+
+
+<div id="Feedback_Report"> 
+             <h3 id="feedback_report">Feedback_Report</h3>
+<p></p><div class="glossary-ref">   A <dfn id="concept-feedbackReport">feedback report</dfn> is a report about a <a href="#concept-subject" class="internalDFN">subject</a> that contains a set of value rating categories. For example, "star rating = 4.3".  </div><p></p> 
+             <p>             </p><table>
+             <tbody><tr>
+             <td>cas:</td>             <td><a href="http://purl.org/cas/ns#Feedback_Report">Feedback_Report</a></td>             </tr>
              </tbody></table> 
              <p></p>             </div>
 
 <p id="I" style="font-size: 300%;">I</p>
 
-<div id="Incentive"> 
-             <h3>Incentive</h3>
-<p></p><div class="glossary-ref">   A <dfn id="concept-incentive" title="Incentive">incentive</dfn> ... </div><p></p> 
+<div id="Identity"> 
+             <h3 id="identity">Identity</h3>
+<p></p><div class="glossary-ref">   <a title="agent" href="#concept-agent" class="internalDFN">Agents</a>, <a title="user" href="#concept-user" class="internalDFN">users</a>, <a title="peer" href="#concept-peer" class="internalDFN">peers</a> all have <dfn id="concept-identity" title="identity">identities</dfn>. An unauthenticated user gets assigned an identity automatically. </div><p></p> 
              <p>             </p><table>
              <tbody><tr>
-             <td>cas:</td>             <td><a href="http://purl.org/cas/ns#Incentive">Incentive</a></td>             </tr>
+             <td>cas:</td>             <td><a href="http://purl.org/cas/ns#Identity">Identity</a></td>             </tr>
              </tbody></table> 
              <p></p>             </div>
 
-<p id="P" style="font-size: 300%;">P</p>
+<p id="M" style="font-size: 300%;">M</p>
 
-<div id="Plan"> 
-             <h3>Plan</h3>
-<p></p><div class="glossary-ref">   A <dfn id="concept-plan" title="Plan">plan</dfn> ... </div><p></p> 
+<div id="Message"> 
+             <h3 id="message">Message</h3>
+<p></p><div class="glossary-ref">   A <dfn id="concept-message">message</dfn> is a piece of information exchanged between <a title="agent" href="#concept-agent" class="internalDFN">agents</a>. </div><p></p> 
              <p>             </p><table>
              <tbody><tr>
-             <td>cas:</td>             <td><a href="http://purl.org/cas/ns#Plan">Plan</a></td>             </tr>
+             <td>cas:</td>             <td><a href="http://purl.org/cas/ns#Message">Message</a></td>             </tr>
+             </tbody></table> 
+             <p></p>             </div>
+
+
+
+<div id="Messaging_Action"> 
+             <h3 id="messaging_action">Messaging_Action</h3>
+<p></p><div class="glossary-ref">   A <dfn id="concept-messaging_action">messaging action</dfn> is the constituent of a protocol: it involves information exchange and subsequent action. </div><p></p> 
+             <p>             </p><table>
+             <tbody><tr>
+             <td>cas:</td>             <td><a href="http://purl.org/cas/ns#Messaging_Action">Messaging_Action</a></td>             </tr>
+             </tbody></table> 
+             <p></p>             </div>
+
+<p id="N" style="font-size: 300%;">N</p>
+
+<div id="Negotiating_Activity"> 
+             <h3 id="negotiating_activity">Negotiating_Activity</h3>
+<p></p><div class="glossary-ref">   A <dfn id="concept-negotiating_activity">negotiating activity</dfn> is an activity that submits a <a href="#concept-task" class="internalDFN">task</a> which may alter other tasks, it may comprise of an authenticating activity and <a href="#concept-storing_task" class="internalDFN">storing task</a> activities. </div><p></p> 
+             <p>             </p><table>
+             <tbody><tr>
+             <td>cas:</td>             <td><a href="http://purl.org/cas/ns#Negotiating_Activity">Negotiating_Activity</a></td>             </tr>
              </tbody></table> 
              <p></p>             </div>
 
 <p id="O" style="font-size: 300%;">O</p>
 
-<div id="Offer"> 
-             <h3>Offer</h3>
-<p></p><div class="glossary-ref">   An <dfn id="concept-offer" title="Offer">offer</dfn> to transfer some rights to an item or to provide a service—for example, an offer to sell tickets to an event, to rent the DVD of a movie, to stream a TV show over the internet, to repair a motorcycle, or to loan a book (same as <a href="http://schema.org/Offer">schema:Offer</a>). </div><p></p> 
-             <p>             </p><table>
-             <tbody><tr>
-             <td>cas:</td>             <td><a href="http://purl.org/cas/ns#Offer">Offer</a></td>             </tr>
-             </tbody></table> 
-             <p></p>             </div>
-
-
-
 <div id="Opinion"> 
-             <h3>Opinion</h3>
-<p></p><div class="glossary-ref">   A <dfn id="concept-opinion" title="Opinion">opinion</dfn> is a specialisation of a reputation report, which contains a single key value pair and binds an opinion to a value. The value is an aggregation of ratings from a set of reputation topics. </div><p></p> 
+             <h3 id="opinion">Opinion</h3>
+<p></p><div class="glossary-ref">   A <dfn id="concept-opinion">opinion</dfn> is a quantitive value of the estimation of a <a href="#concept-subject" class="internalDFN">subject</a>s worth based on feedback categories about it.  either an <a href="#concept-activity" class="internalDFN">activity</a>, <a href="#concept-agent" class="internalDFN">agent</a>, <a href="#concept-peer" class="internalDFN">peer</a>, <a href="#concept-user" class="internalDFN">user</a>, or <a href="#concept-collective" class="internalDFN">collective</a>, that is being discussed, described, or dealt with in the context of feedback reports and reputation reports. </div><p></p> 
              <p>             </p><table>
              <tbody><tr>
              <td>cas:</td>             <td><a href="http://purl.org/cas/ns#Opinion">Opinion</a></td>             </tr>
              </tbody></table> 
              <p></p>             </div>
 
+
+
+<div id="Opinion_Report"> 
+             <h3 id="opinion_report">Opinion_Report</h3>
+<p></p><div class="glossary-ref">   An <dfn id="concept-opinion_report">opinion report</dfn> is a specialisation of a <a href="#concept-reputation_report" class="internalDFN">reputation report</a>, which contains a single key value pair and binds an opinion to a value. The value is an aggregation of ratings from a set of reputation topics. </div><p></p> 
+             <p>             </p><table>
+             <tbody><tr>
+             <td>cas:</td>             <td><a href="http://purl.org/cas/ns#Opinion_Report">Opinion_Report</a></td>             </tr>
+             </tbody></table> 
+             <p></p>             </div>
+
+
+
+<div id="Orchestration_Peer"> 
+             <h3 id="orchestration_peer">Orchestration_Peer</h3>
+<p></p><div class="glossary-ref">   A <dfn id="concept-orchestration_peer">orchestration peer</dfn> is a specialisation of a <a href="#concept-peer" class="internalDFN">peer</a>, which specialises in storing feedback about <a title="subject" href="#concept-subject" class="internalDFN">subjects</a> and generating  <a title="reputation report" href="#concept-reputation_report" class="internalDFN">reputation reports</a> and <a title="opinion report" href="#concept-opinion_report" class="internalDFN">opinion reports</a> about <a title="subject" href="#concept-subject" class="internalDFN">subjects</a>.  </div><p></p> 
+             <p>             </p><table>
+             <tbody><tr>
+             <td>cas:</td>             <td><a href="http://purl.org/cas/ns#Orchestration_Peer">Orchestration_Peer</a></td>             </tr>
+             </tbody></table> 
+             <p></p>             </div>
+
+<p id="P" style="font-size: 300%;">P</p>
+
+<div id="Peer"> 
+             <h3 id="peer">Peer</h3>
+<p></p><div class="glossary-ref">   A <dfn id="concept-peer">peer</dfn> is a software <a href="#concept-agent" class="internalDFN">agent</a> in a SmartSociety system that represents another <a href="#concept-agent" class="internalDFN">agent</a>. </div><p></p> 
+             <p>             </p><table>
+             <tbody><tr>
+             <td>cas:</td>             <td><a href="http://purl.org/cas/ns#Peer">Peer</a></td>             </tr>
+             </tbody></table> 
+             <p></p>             </div>
+
+
+
+<div id="Plan"> 
+             <h3 id="plan">Plan</h3>
+<p></p><div class="glossary-ref">   A <dfn id="concept-plan">plan</dfn> is a specification for the execution of a <a href="#concept-task" class="internalDFN">task</a>. </div><p></p> 
+             <p>             </p><table>
+             <tbody><tr>
+             <td>cas:</td>             <td><a href="http://purl.org/cas/ns#Plan">Plan</a></td>             </tr>
+             </tbody></table> 
+             <p></p>             </div>
+
+
+
+<div id="Posting_Task_Request"> 
+             <h3 id="posting_task_request">Posting_Task_Request</h3>
+<p></p><div class="glossary-ref">   A <dfn id="concept-posting_task_request">posting task request</dfn> is an <a href="#concept-activity" class="internalDFN">activity</a> that posts a <a href="#concept-task" class="internalDFN">task</a> to <a href="#concept-orchestration_peer" class="internalDFN">orchestration peer</a>.  </div><p></p> 
+             <p>             </p><table>
+             <tbody><tr>
+             <td>cas:</td>             <td><a href="http://purl.org/cas/ns#Posting_Task_Request">Posting_Task_Request</a></td>             </tr>
+             </tbody></table> 
+             <p></p>             </div>
+
+
+
+<div id="Protocol"> 
+             <h3 id="protocol">Protocol</h3>
+<p></p><div class="glossary-ref">   A <dfn id="concept-protocol">protocol</dfn> is a collection of <a title="plan" href="#concept-plan" class="internalDFN">plans</a> that involve communications between <a title="peer" href="#concept-peer" class="internalDFN">peers</a>. </div><p></p> 
+             <p>             </p><table>
+             <tbody><tr>
+             <td>cas:</td>             <td><a href="http://purl.org/cas/ns#Protocol">Protocol</a></td>             </tr>
+             </tbody></table> 
+             <p></p>             </div>
+
 <p id="R" style="font-size: 300%;">R</p>
 
+<div id="Reputation_Category"> 
+             <h3 id="reputation_category">Reputation_Category</h3>
+<p></p><div class="glossary-ref">   A <dfn id="concept-reputation_category">reputation category</dfn> is a category used to rate a <a href="#concept-subject" class="internalDFN">subject</a>, in a <a href="#concept-reputation_report" class="internalDFN">reputation report</a>.   </div><p></p> 
+             <p>             </p><table>
+             <tbody><tr>
+             <td>cas:</td>             <td><a href="http://purl.org/cas/ns#Reputation_Category">Reputation_Category</a></td>             </tr>
+             </tbody></table> 
+             <p></p>             </div>
+
+
+
+<div id="Reputation_Peer"> 
+             <h3 id="reputation_peer">Reputation_Peer</h3>
+<p></p><div class="glossary-ref">   A <dfn id="concept-reputation_peer">reputation peer</dfn> is a specialisation of a <a href="#concept-peer" class="internalDFN">peer</a>, which specialises in storing feedback about <a title="subject" href="#concept-subject" class="internalDFN">subjects</a> and generating reputation and opinion reports about <a title="subject" href="#concept-subject" class="internalDFN">subjects</a>.     A <dfn id="concept-view">view</dfn> is an entity pertaining to a view of a user interface. </div><p></p> 
+             <p>             </p><table>
+             <tbody><tr>
+             <td>cas:</td>             <td><a href="http://purl.org/cas/ns#Reputation_Peer">Reputation_Peer</a></td>             </tr>
+             </tbody></table> 
+             <p></p>             </div>
+
+
+
+<div id="Reputation_Report"> 
+             <h3 id="reputation_report">Reputation_Report</h3>
+<p></p><div class="glossary-ref">   A <dfn id="concept-reputation_report">reputation report</dfn> is a report about a <a href="#concept-subject" class="internalDFN">subject</a> that contains a set of value rating categories. For example, a <a href="#concept-subject" class="internalDFN">subject</a> has been rated with a set of star ratings, and the average of those star ratings are "average star rating = 4.3". </div><p></p> 
+             <p>             </p><table>
+             <tbody><tr>
+             <td>cas:</td>             <td><a href="http://purl.org/cas/ns#Reputation_Report">Reputation_Report</a></td>             </tr>
+             </tbody></table> 
+             <p></p>             </div>
+
+
+
+<div id="Requesting_Opinion"> 
+             <h3 id="requesting_opinion">Requesting_Opinion</h3>
+<p></p><div class="glossary-ref">   A <dfn id="concept-requesting_opinion">requesting opinion</dfn> is an <a href="#concept-activity" class="internalDFN">activity</a> that requests a <a href="#concept-opinion_report" class="internalDFN">opinion report</a> from the <a href="#concept-reputation_peer" class="internalDFN">reputation peer</a>. </div><p></p> 
+             <p>             </p><table>
+             <tbody><tr>
+             <td>cas:</td>             <td><a href="http://purl.org/cas/ns#Requesting_Opinion">Requesting_Opinion</a></td>             </tr>
+             </tbody></table> 
+             <p></p>             </div>
+
+
+
 <div id="Request"> 
-             <h3>Request</h3>
-<p></p><div class="glossary-ref">   An <dfn id="concept-request" title="Request">request</dfn> is ... </div><p></p> 
+             <h3 id="request-1">Request</h3>
+<p></p><div class="glossary-ref">   A <dfn id="request">request</dfn> is an entity that is used to request information from a service. </div><p></p> 
              <p>             </p><table>
              <tbody><tr>
              <td>cas:</td>             <td><a href="http://purl.org/cas/ns#Request">Request</a></td>             </tr>
@@ -288,23 +522,122 @@ The index below provides links directly to the definition of the terms within th
 
 
 
-<div id="Reward"> 
-             <h3>Reward</h3>
-<p></p><div class="glossary-ref">   A <dfn id="concept-reward" title="Reward">reward</dfn> ... </div><p></p> 
+<div id="Respond"> 
+             <h3 id="respond">Respond</h3>
+<p></p><div class="glossary-ref">   A <dfn id="concept-respond">respond</dfn> is an <a href="#concept-activity" class="internalDFN">activity</a> that is used to  respond to an API call. </div><p></p> 
              <p>             </p><table>
              <tbody><tr>
-             <td>cas:</td>             <td><a href="http://purl.org/cas/ns#Reward">Reward</a></td>             </tr>
+             <td>cas:</td>             <td><a href="http://purl.org/cas/ns#Respond">Respond</a></td>             </tr>
              </tbody></table> 
              <p></p>             </div>
 
 
 
-<div id="Reputation"> 
-             <h3>Reputation</h3>
-<p></p><div class="glossary-ref">   A <dfn id="concept-reputation" title="Reputation">reputation</dfn> is a report about a subject that contains a set of key value pairs. The key value pairs is a binding between a topic of reputation to a rating value, which is an aggregation of a set ratings for that topic. For example, a subject has been rated with a set of star ratings, and the average of those star ratings are "average star rating = 4.3". </div><p></p> 
+<div id="Response"> 
+             <h3 id="response-1">Response</h3>
+<p></p><div class="glossary-ref">   A <dfn id="response">response</dfn> is an entity that is computed in response to a <a href="#request" class="internalDFN">request</a>. </div><p></p> 
              <p>             </p><table>
              <tbody><tr>
-             <td>cas:</td>             <td><a href="http://purl.org/cas/ns#Reputation">Reputation</a></td>             </tr>
+             <td>cas:</td>             <td><a href="http://purl.org/cas/ns#Response">Response</a></td>             </tr>
+             </tbody></table> 
+             <p></p>             </div>
+
+<p id="S" style="font-size: 300%;">S</p>
+
+<div id="Send_Negotiation_Response"> 
+             <h3 id="send_negotiation_response">Send_Negotiation_Response</h3>
+<p></p><div class="glossary-ref">   A <dfn id="concept-sending_negotiation_response">sending negotiation response</dfn> is an entity that contains the <a href="#response" class="internalDFN">response</a> to a negotiation activity. </div><p></p> 
+             <p>             </p><table>
+             <tbody><tr>
+             <td>cas:</td>             <td><a href="http://purl.org/cas/ns#Send_Negotiation_Response">Send_Negotiation_Response</a></td>             </tr>
+             </tbody></table> 
+             <p></p>             </div>
+
+
+
+<div id="Send_Request"> 
+             <h3 id="send_request">Send_Request</h3>
+<p></p><div class="glossary-ref">   A <dfn id="sending_request">sending request</dfn> is an <a href="#concept-activity" class="internalDFN">activity</a> that sends a <a href="#request" class="internalDFN">request</a> to <a href="#concept-peer" class="internalDFN">peer</a>. </div><p></p> 
+             <p>             </p><table>
+             <tbody><tr>
+             <td>cas:</td>             <td><a href="http://purl.org/cas/ns#Send_Request">Send_Request</a></td>             </tr>
+             </tbody></table> 
+             <p></p>             </div>
+
+
+
+<div id="Storing_Feedback"> 
+             <h3 id="storing_feedback">Storing_Feedback</h3>
+<p></p><div class="glossary-ref">   A <dfn id="concept-storing_feedback">storing feedback</dfn> is an <a href="#concept-activity" class="internalDFN">activity</a> used by <a href="#concept-reputation_peer" class="internalDFN">reputation peer</a> to store a <a href="#concept-feedbackReport" class="internalDFN">feedback report</a> within it. </div><p></p> 
+             <p>             </p><table>
+             <tbody><tr>
+             <td>cas:</td>             <td><a href="http://purl.org/cas/ns#Storing_Feedback">Storing_Feedback</a></td>             </tr>
+             </tbody></table> 
+             <p></p>             </div>
+
+
+
+<div id="Storing_Task"> 
+             <h3 id="storing_task">Storing_Task</h3>
+<p></p><div class="glossary-ref"> A <dfn id="concept-storing_task">storing task</dfn> is an <a href="#concept-activity" class="internalDFN">activity</a> that stores a <a href="#concept-task" class="internalDFN">task</a> locally. </div><p></p> 
+             <p>             </p><table>
+             <tbody><tr>
+             <td>cas:</td>             <td><a href="http://purl.org/cas/ns#Storing_Task">Storing_Task</a></td>             </tr>
+             </tbody></table> 
+             <p></p>             </div>
+
+
+
+<div id="Submitting_Activity"> 
+             <h3 id="submitting_activity">Submitting_Activity</h3>
+<p></p><div class="glossary-ref">   A <dfn id="concept-submitting_activity">submitting activity</dfn> is an <a href="#concept-activity" class="internalDFN">activity</a> that submits a <a href="#concept-task" class="internalDFN">task</a>, it may comprise of an authenticating activity and <a href="#concept-storing_task" class="internalDFN">storing task</a> activities. </div><p></p> 
+             <p>             </p><table>
+             <tbody><tr>
+             <td>cas:</td>             <td><a href="http://purl.org/cas/ns#Submitting_Activity">Submitting_Activity</a></td>             </tr>
+             </tbody></table> 
+             <p></p>             </div>
+
+
+
+<div id="Submitting_Feedback"> 
+             <h3 id="submitting_feedback">Submitting_Feedback</h3>
+<p></p><div class="glossary-ref">   A <dfn id="concept-submitting_feedback">submitting feedback</dfn> is an <a href="#concept-activity" class="internalDFN">activity</a> that submits a <a href="#concept-feedbackReport" class="internalDFN">feedback report</a> to the <a href="#concept-reputation_peer" class="internalDFN">reputation peer</a>. </div><p></p> 
+             <p>             </p><table>
+             <tbody><tr>
+             <td>cas:</td>             <td><a href="http://purl.org/cas/ns#Submitting_Feedback">Submitting_Feedback</a></td>             </tr>
+             </tbody></table> 
+             <p></p>             </div>
+
+
+
+<div id="Subject"> 
+             <h3 id="subject">Subject</h3>
+<p></p><div class="glossary-ref">   A <dfn id="concept-subject">subject</dfn> is either an <a href="#concept-activity" class="internalDFN">activity</a>, <a href="#concept-agent" class="internalDFN">agent</a>, <a href="#concept-peer" class="internalDFN">peer</a>, <a href="#concept-user" class="internalDFN">user</a>, or <a href="#concept-collective" class="internalDFN">collective</a>, that is being discussed, described, or dealt with in the context of feedback reports and reputation reports. </div><p></p> 
+             <p>             </p><table>
+             <tbody><tr>
+             <td>cas:</td>             <td><a href="http://purl.org/cas/ns#Subject">Subject</a></td>             </tr>
+             </tbody></table> 
+             <p></p>             </div>
+
+<p id="T" style="font-size: 300%;">T</p>
+
+<div id="Task"> 
+             <h3 id="task">Task</h3>
+<p></p><div class="glossary-ref">   A <dfn id="concept-task">task</dfn> is a potential activity that involves <a title="capability" href="#concept-capability" class="internalDFN">capabilities</a>, potentially contributed by several <a title="agent" href="#concept-agent" class="internalDFN">agents</a>. </div><p></p> 
+             <p>             </p><table>
+             <tbody><tr>
+             <td>cas:</td>             <td><a href="http://purl.org/cas/ns#Task">Task</a></td>             </tr>
+             </tbody></table> 
+             <p></p>             </div>
+
+<p id="U" style="font-size: 300%;">U</p>
+
+<div id="User"> 
+             <h3 id="user">User</h3>
+<p></p><div class="glossary-ref">   A <dfn id="concept-user">user</dfn> is a person who is using a SmartSociety system. </div><p></p> 
+             <p>             </p><table>
+             <tbody><tr>
+             <td>cas:</td>             <td><a href="http://purl.org/cas/ns#User">User</a></td>             </tr>
              </tbody></table> 
              <p></p>             </div>
 
